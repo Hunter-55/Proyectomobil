@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <!-- leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!--trazo rutas-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <!-- geocodificación-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <!-- libreria de calculo espacial-->
+    <!--<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>-->
+    <link rel="stylesheet" href="style/maps.css" />
+    
+</head>
+<body>
+    <div id="background">
+        <div id="container">
+            <div id="title_box1">
+                <div class="columna">
+                    <div id="map" style=" 
+                        position: absolute;
+                        top: 0px;
+                        left: 0px; 
+                        right: 15%;
+                        bottom: 0px;">
+                    </div>
+                </div>
+                
+                <div class="columna">
+                    <div class="datos">
+                        <center>
+                            <h5 id="htitle">Datos del Usuario</h5>
+                            <hr>
+                            <h5 id="h0"></h5>
+                            <hr>
+                            <h5 id="h1"></h5>
+                            <hr>
+                            <h5 id="h2"></h5>
+                            <hr>
+                            <h5 id="h3"></h5>
+                            <hr>
+                            <h5 id="h4"></h5>
+                            <hr>
+                            <h5 id="h5"></h5>
+                            <hr>
+                            <h5 id="h6"></h5>
+                            <hr>
+                            <h5 id="h7"></h5>
+                            <hr>
+                            <h5 id="h8"></h5>
+                            <hr>
+                            <h5 id="h9"></h5>
+                            <hr>
+                            <h5 id="h10"></h5>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--socket.io -->  
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/maps.js"></script>
+</body>
+</html>

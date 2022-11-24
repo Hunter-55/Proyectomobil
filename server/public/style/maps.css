@@ -1,0 +1,59 @@
+/*Fondo*/
+#background{
+    position:    absolute;
+    top:         0;
+    left:        0;
+    width:       100%;
+    height:      100%;
+    display:     flex;
+    align-items: flex-end;
+}
+
+/*carta*/
+#container{
+    position: relative;
+    top:         0;
+    left:        0;
+    width:       100%;
+    height:      100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Caja del titulo y logos*/
+#title_box1{
+    position: absolute;
+    top:         0;
+    left:        0;
+    width:       100%;
+    height:      100%;
+    /*background:white;*/
+    display:     flex;
+    align-items: flex-end;
+}
+
+/*Title logos*/
+.columna {
+    width:33%;
+}
+
+.datos{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 85%;
+    right: 0px; 
+    height:      100%;
+    background-color:#800000;
+    color: black;
+    overflow:scroll;
+}
+
+#mapinit{
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    bottom: 0px;
+}
